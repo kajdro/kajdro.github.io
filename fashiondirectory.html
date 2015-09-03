@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+<link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
+<title>Tictail Fashion Directory</title>
+<style>
+		/* http://meyerweb.com/eric/tools/css/reset/ 
+		   v2.0 | 20110126
+		   License: none (public domain)
+		*/
+
+		html, body, div, span, applet, object, iframe,
+		h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+		a, abbr, acronym, address, big, cite, code,
+		del, dfn, em, img, ins, kbd, q, s, samp,
+		small, strike, strong, sub, sup, tt, var,
+		b, u, i, center,
+		dl, dt, dd, ol, ul, li,
+		fieldset, form, label, legend,
+		table, caption, tbody, tfoot, thead, tr, th, td,
+		article, aside, canvas, details, embed, 
+		figure, figcaption, footer, header, hgroup, 
+		menu, nav, output, ruby, section, summary,
+		time, mark, audio, video {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			font-size: 100%;
+			font: inherit;
+			vertical-align: baseline;
+		}
+		/* HTML5 display-role reset for older browsers */
+		article, aside, details, figcaption, figure, 
+		footer, header, hgroup, menu, nav, section {
+			display: block;
+		}
+		body {
+			line-height: 1;
+		}
+		ol, ul {
+			list-style: none;
+		}
+		blockquote, q {
+			quotes: none;
+		}
+		blockquote:before, blockquote:after,
+		q:before, q:after {
+			content: '';
+			content: none;
+		}
+		table {
+			border-collapse: collapse;
+			border-spacing: 0;
+		}
+
+		/*-------*/
+
+	body {
+		font-family: 'Quicksand', sans-serif;
+		background-color: #f8f1e0;
+		-webkit-font-smoothing: antialiased;
+		max-width: 980px;
+		margin: 20px auto;
+	}
+	
+	#head {
+		background-image: url("http://cl.ly/image/2G041d2e2D3P/tictail-logo.png");
+		height: 185px;
+		padding-top: 95px;
+		z-index: 0;
+		position: fixed;
+		width: 100%;
+		max-width: 980px;
+		top: 50px;
+		margin-top: 50px;
+	}
+
+	.separator {
+		background-color: #ecb0bf;
+		height: 3px;
+		width: 140px;
+		margin: 115px auto;
+	}
+	
+	h1 {
+		font-size: 80px;
+		font-weight: bold;
+		letter-spacing: -6px;
+		color: #E24B9C;
+		text-transform: uppercase;
+		text-align: center;
+		margin: 0;
+	}
+	
+	h2 {
+		font-size: 30px;
+		font-weight: normal;
+		color: #222;
+		letter-spacing: -1px;
+		text-align: center;
+		margin-top: 20px;
+	}
+
+	#menu {
+		background-color: #f8f1e0;
+		top: 0;
+		position: fixed;
+		height: 30px;
+		width: 100%;
+		max-width: 980px;
+		padding: 10px 0 0 0;
+		margin: 0 auto 20px;
+		z-index: 10;
+		text-align: center;
+	}
+
+		#menu a {
+			color: #333;
+			font-weight: bold;
+			text-decoration: none;
+			margin: 0 15px;
+			text-transform: uppercase;
+			font-size: 12px;
+		}
+
+		#menu a:hover {
+			color: #E24B9C;
+		}
+
+		.border {
+			border-style: solid;
+			border-color: #222;
+			margin-top: 10px;
+			border-top-width: 2px;
+			height: 1px;
+			border-bottom-width: 1px;		
+		}
+
+	#content {
+		margin: 503px -38px 0px -38px;
+		z-index: 9;
+		text-align: center;
+		position: relative;
+		padding: 0 20px;
+		background-color: #f8f1e0;
+	}
+
+	#content img {
+		border: 1px solid #777;
+		margin-bottom: 13px;
+		width: 297px;
+		height: 244px;
+		background-color: white;
+	}
+
+	.store {
+		display: inline-block;
+		margin: 0 18px 60px 18px;
+		list-style-type: none;
+
+	}
+
+	.store a  {
+		text-decoration: none;
+		color: #444;
+		font-size: 15px;
+		text-align: center;
+		font-weight: bold;
+	}
+
+	.store a:hover {
+		text-decoration: none;
+		color: #E24B9C;
+	}
+
+	/* Smartphones (landscape) ----------- */
+@media only screen 
+and (max-width : 639px) {
+/* Styles */
+
+h1 {
+	font-size: 24px;
+	letter-spacing: 0;
+}
+
+h2 {
+	font-size: 21px;
+}
+
+#head {
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+}
+
+
+@media only screen 
+and (min-width : 640px) 
+and (max-width : 980px) {
+/* Styles */
+
+	h1 { 
+		font-size: 56px;
+	}
+
+	h2 {
+		font-size: 28px;
+	}
+
+	#head {
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+}
+
+
+
+	
+</style>
+</head>
+
+<body>
+
+	<div id="menu">
+		<a href="#">The Directory</a>
+		<a href="#">Add store to directory</a>
+		<a href="#">Get Tictail Store</a>
+		<div class="border">
+		</div>
+	</div>
+
+	<div id="head">
+		<h1>
+		The Fashion Directory
+		</h1>
+		<h2>
+		A collection of fashion stores on Tictail
+		</h2>
+		<div class="separator">
+		</div>
+	</div>
+
+	<ul id="content">
+
+		<li class="store">
+			<a href="https://shopstylescrapbook.tictail.com" />
+				<img src="http://cl.ly/image/2g23170e3r2h/stylescrapbook-cover.png" />
+				<h3>StyleScrapbook</h3>
+			</a>
+		</li>
+
+		<li class="store">
+			<a href="#">
+				<img src="http://cl.ly/image/1F1j0z0L0G3h/store.png" />
+				<h3>afterDRK</h3>
+			</a>
+		</li>
+
+		<li class="store">
+			<a href="https://http://ulrikkelund.tictail.com/">
+				<img src="http://cl.ly/image/0W422i2x261Y/Ulrikkelund-cover.png" />
+				<h3>Ulrikke Lund</h3>
+			</a>
+		</li>
+
+		<li class="store">
+			<a href="#">
+				<img src="http://cl.ly/image/310G1w2R2V1P/acie-cover.png" />
+				<h3>Acie</h3>
+			</a>
+		</li>
+
+		<li class="store">
+			<a href="#">
+				<img src="http://cl.ly/image/3N12421t0F2Q/fashionguitar-cover.png" />
+				<h3>THEFASHIONGUITAR</h3>
+			</a>
+		</li>
+
+		<li class="store">
+			<a href="#">
+				<img src="http://cl.ly/image/0V0G29240o2v/miconfession-cover.png" />
+				<h3>Mi Confesión</h3>
+			</a>
+		</li>
+
+			<li class="store">
+			<a href="#">
+				<img src="http://cl.ly/image/2D1j0f3a1O0K/fashionsquad-cover.png" />
+				<h3>FashionSquad</h3>
+			</a>
+		</li>
+
+		<li class="store">
+			<a href="#">
+				<img src="http://cl.ly/image/2r101P1U0011/trineswardrobe-cover.png" />
+				<h3>Trine's Wardrobe</h3>
+			</a>
+		</li>
+
+		<li class="store">
+			<a href="#">
+				<img src="http://cl.ly/image/0z3D002W3k2K/emptyroom-cover.png" />
+				<h3>empty room</h3>
+			</a>
+		</li>
+
+		<li class="store">
+			<a href="#">
+				<img src="http://cl.ly/image/0S3Z0w0c0n0D/katjaharlings-cover.png" />
+				<h3>Katja Harlings Salgsblog</h3>
+			</a>
+		</li>
+
+		<li class="store">
+			<a href="#">
+				<img src="http://cl.ly/image/1F1j0z0L0G3h/store.png" />
+				<h3>afterDRK</h3>
+			</a>
+		</li>
+
+		<li class="store">
+			<a href="#">
+				<img src="http://cl.ly/image/1F1j0z0L0G3h/store.png" />
+				<h3>afterDRK</h3>
+			</a>
+		</li>
+
+	</ul>
+
+
+</body>
+
+</html>
